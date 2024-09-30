@@ -1,0 +1,14 @@
+Time Complexity -->The time complexity doesn't indicate the exact execution time of an algorithm instead it gives an idea of the variation of time with a corresponding variation of input size
+Tells us the execution time of algo  -> ❌
+T(N) ∝ N
+
+
+ O(logN) -> Running time increases logarithmically with input size
+ O(N) -> Running time increases linearly with input size
+ O(N^2) -> Running time increases Quadratically with input size
+ O(2^N) -> Running time increases Exponentially with input size
+
+ O (Big O) -> It represents the worst case time complexity
+
+
+Rules:- 1. Ignore all the lower level variables, lower degree variables and all constants
