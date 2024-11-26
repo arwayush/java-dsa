@@ -12,7 +12,7 @@ public class DuplicateElementsWithDistanceK {
             for(int j=i+1; j<=i+k&&j<n; j++)//inner loop
             {
                 if(arr[i]==arr[j]){
-                    if((j-i)<=k)return true;
+                    if((j-i)<=k) return true;
                 }
             }
         }
@@ -25,14 +25,10 @@ public class DuplicateElementsWithDistanceK {
         HashMap<Integer, Integer> mp = new HashMap<>();
         int n = arr.length;
         for (int i = 0; i < n; i++) {
-            if(!mp.containsKey(arr[i])){
-                mp.put(arr[i], i);
-            }else{
-                if(i - mp.get(arr[i]) <= k){
-                    return  true;
-                }
-                mp.put(arr[i], i);
-            }
+          if(mp.containsKey(arr[i]) && i-mp.get(arr[i]) <= k){
+              return  true;
+          }
+          mp.put(arr[i], i);
         }
         return  false;
     }
